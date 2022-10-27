@@ -9,12 +9,12 @@ import this
 
 
 # Different prints
-name = "Vangelis"
+school = "ITHS"
 city = "Stockholm"
-age = 24
+subject = "python"
 
-print("Hello my name is {0} and I am {1} years old and live in {2}".format(name, age, city))
-print(f"Hello my name is {name} and I live in {city}, and I am {age} years old")
+print("Hello, I study at {0} in {1} and my current subject is {2}".format(school, city, subject))
+print(f"Hello, I study at {school} in {city} and my current subject is {subject}")
 
 
 # Format prints
