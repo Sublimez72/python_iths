@@ -1,0 +1,63 @@
+# Chapter 1 - Coding exercises
+
+# Your first program
+
+Create a script that prints Hello world. Run the script and it should output this to your terminal
+
+# Print the zen of python
+
+Create a small script that imports the module you need in order to print the `zen of python`
+
+## PEP8
+
+This is a reading exercise where you should read through PEP8 here https://peps.python.org/pep-0008/
+    
+Focus on the seconds for code-layout & namiing conventions
+
+## Different prints
+
+Write a script that prints anything with both the old `.format()` string and with the new `f-strings`. You can output anything  you like, but you need to print the values from variables for this.
+
+## Format prints
+
+Create a script with a float number with a decimal, like 3.14159 and use this value to render it in different ways.
+
+All options can be found in the official documentation here https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting
+
+## REPL
+
+Take one or more of the scripts you created above. Open up the python REPL and manually write the entire script and execute them line by line in your terminal. See how things are executed line by line. Assign some variable and try to assign it again to get a different output compared to your orginal script.
+
+## Basic PDB debugging
+
+Make a copy of one of your scripts to a new file. Edit the file
+
+At some point in the middle of your code add the following code
+
+```
+import pdb
+pdb.set_trace()
+```
+
+and run your script.
+
+This will throw you into the interactive debugger. To get help you type `h` or `help` and press enter. Do that and explore what commands is available in the debugger.
+
+To continue execute the remaining of your script type `c`. To quit exactly where you are type `q` and enter
+
+## Two inputs
+
+Write a script that asks for 2 inputs.
+
+Save each one of them into one variable and print both variables to the terminal
+
+## Calculate a math problem
+
+Write a script where you input one or more numbers and perform a calculation on any formula.
+
+Example formulas
+
+- calculate the area of a square
+- Given a diameter, print the circumfrance
+- Given a base and height, print the area of a triangle
+- Given a number, calculate the moms for it, add 25% to the value

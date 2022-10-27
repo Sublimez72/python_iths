@@ -1,0 +1,139 @@
+# Chapter 2 - Coding exercises
+
+## Play with dir() function
+
+Create a script and define a few variables of all different types you know.
+
+Next call `dir(your_variable)` on all the variables you have defined and print them. Run your script and observe and read through all the output.
+
+ - What interesting things can you find in the output?
+ - Does different values affect what output you get?
+ - Which type has the most values returned?
+
+## String substrings
+
+Get the characters from index 2 to index 4.
+
+If you have the string "abcdef" it should print out "cd"
+
+## Palindrome program
+
+Task: Given a string, write a python script to check if it is palindrome or not. A string is said to be palindrome if the reverse of the string is the same as string. For example, “radar” is a palindrome, but “radix” is not a palindrome.
+
+Example input/result:
+
+Input: malayalam
+Result: Yes
+
+Input: geeks
+Result: No
+
+## User input
+
+Create a script that asks the user for some input and save it to a variable.
+
+Do this multiple times and save to multiple variables.
+
+Use the f-string rendering to print the contents of your variables to your terminal.
+
+For instance create a program that asks for your first and last name, then print your full name in one line
+
+## Variable comparisons
+
+Write a program where you define a number of variables and assign them to all the basic variables types, boolean, str, int, float.
+
+Now try to compare the different values between eachother using `==` and print the result. Try and see what happens if you attempt this with different variable types. For instance a string and a int.
+
+Next try to add variables to eachother and store them in a new variable. Print the content of the new variables to your terminal and try to figure out which values works with what other values.
+
+## Help command
+
+Python has a built in `help()` command where in your REPL or in your script, you can run help on any variable or object.
+
+Create a script and assign several variables different values from each basic data type, bool, str, int, float. Then run help on each one of the variables and read through the output.
+
+What is different between each call to help when doing it with different variable types?
+
+## String escapes
+
+Python has several string escapes that can be put into a string variable to get different outputs.
+
+Create a script where you create several different string variables but you add in the following escape characters inside the strings. Then print the strings to your terminal and observ the output from them.
+
+- \'	Single Quote	
+- \\	Backslash	
+- \n	New Line	
+- \r	Carriage Return	
+- \t	Tab	
+- \b	Backspace	
+- \f	Form Feed	
+- \ooo	Octal value	
+- \xhh	Hex value
+
+What happens in the rare case:s where you put `'` or `\` inside your string but you do NOT add the escape character?
+
+## String .format() vs f-strings
+
+Create a script and create several different string variables with different texts. First use the `.format()` method to render a string into another string and print it to your terminal.
+
+Next use the f-strings to print and render a string into another string.
+
+Compare both methods and which one is simpler to use.
+
+## Casting variables
+
+Create a script and create a few variables and assign them different values. Now attempt to convert each different variable type to another and see where this fails and where this works.
+
+Use the following convert methods, `str()` `int()` `float()` `bool()`
+
+Which values can be casted to other values and which values do not work?
+
+## Try the "in" keyword
+
+Create a script where you define several different variables and assign them different values, create some ints, some string, some booleans, some floats etc. Now attempt to use the "in" keyword with two variables of the same type and different types and see where this keyword is useable and where it is not?
+
+Bonus question is that when you get the Exception out, try to google for the Exception name you get back and see if you can find the Exception documentation for that name on python.org documentation website
+
+## Sample different string conditional methods
+
+Write a script where you define a string variable. Now print and call the following functions on that string variable and update the variable content until you find a value that will print `True` and not `False`.
+
+- .isalpha()
+- .isascii()
+- .isdecimal()
+- .isdigit()
+- .islower()
+- .isnumeric()
+- .istitle()
+- .isupper()
+
+## Join and jumble strings
+
+Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string. Go to the editor
+
+## Upper and lower case
+
+Write a Python script that takes input from the user and displays that input back in upper and lower cases.
+
+## Reverse string if multiple of 4
+
+Write a Python script that takes a input from the user and prints the reverse string if it's length is a multiple of 4.
+
+Hint here is to look up and read about the `len()` method that we have not yet looked at in depth
+
+## Split a string into smaller parts
+
+Create a string variabl and fill it a long string of text that might include one or more `\n`. Then with the same variable run the three different split methods `.split()` `.rsplit()` and `.splitlines()`. Try to modify the string to see if you can get more then 2 values out from the methods
+
+## Print radius of a circle
+
+Write a Python program which accepts the radius of a circle from the user and compute the area. The variable could be either static in your code, or accept a `input()` from the user so you can run the script multiple times with different values.
+
+Sample Output :
+
+r = 1.1
+Area = 3.8013271108436504
+
+## Add "is" to a string
+
+Write a Python program to get a new string from a given string where "Is" has been added to the front. If the given string already begins with "Is" then return the string unchanged.
