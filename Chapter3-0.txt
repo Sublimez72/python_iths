@@ -1,0 +1,197 @@
+# Chapter 3 - Coding exercises
+
+## Define a list with items of different types
+
+Create a variable called `my_list` and create a list with multiple items of different types as values within that list. Assign a boolean, a string, a int, a float or anything you like to this list.
+
+Next try to print out the entire list, a subset of items from this list, a specific item from a index that you get from `input()` method, a slize of the list with several items at once.
+
+## Help and test methods
+
+Create one variable for each one of the four main collection types mentioned in this chapter course material. One of each list, dict, tuple, set.
+
+Then run the `help()` on each one of these objects and inspect the output from each one.
+
+Try to find one method in the list of available methods here, read the documentation for it then update your script and attempt to run that method.
+
+NOTE: That each method call might take some input parameters depending on what you want to do. Attempt to find a method call that has no input variables first. Attempt to run one method on each one of the 4 object types.
+
+## Append to list
+
+Create an empty list. Create two other variables and ask the user to submit some text via the `input()` method call.
+
+Do this 2 or more times one after another. After each input from the user, append the value to your list.
+
+At the end of your script, print the entire list.
+
+## Find the index of an item
+
+Create a variable as a list and fill it with different values.
+
+Next write code to find the index of an item in a specified list.
+
+The item you want to find can either be defined as a separate variable that you set the value to yourself.
+
+Or you can ask the user for a input from the terminal and try to find what the user asks for.
+
+Print "Yes" and the index number if found. Print "No" if it can't be found.
+
+## Print first and last items
+
+Write a Python program to display the first and last colors from the following list.
+
+color_list = ["Red","Green","White" ,"Black"]
+
+## Lenght of a list
+
+Write a script where you define a list and add any number of items to it.
+
+Next try to figure out what method you should use on your list variable to print out the number of items that is currently in your list.
+
+Bonus is if you can create a script where instead of using the method on the list variable, you create a counter and use a `for loop` to count the number of items in it.
+
+## Remove an item from a list
+
+Write a script where you define a list with any number of values.
+
+Next try to remove one or more values from your list and print the contents of the list between each removal.
+
+What happens if you try to remove a items from a list that is empty? or if you try to remove a item that is out of bounds?
+
+## Add numbers from a list
+
+Write a script where you define a list with only numbers in it
+
+Next try to figure out at least two ways you can add all numbers together and save the result in a new variable called `result`
+
+print this variable to the terminal
+
+Example: [1,2,3,4,5] should result in 15 in the result variable.
+    
+Note, your script should work with any lenght of a list.
+
+Will your script work if you mix integers and float values? Try this
+
+## Is list empty or not?
+
+There are many different ways of figure out if a list is empty or not.
+
+Try to figure out at least two different ways of how you can find out if a list is empty or not.
+
+## Remove item in list from user input
+
+Write a script where you define a list with only different numbers in it.
+
+Next ask the user to submit a number from the terminal as a input
+
+Last, if the number exists within your list, remove it then print the contents from the list.
+
+If the number you have submited do not exist, then it should print out the original list unmodified.
+
+Bonus here is if you make a for loop and you can input several numbers in a row, remove them then print the list each time you make an input
+
+## Advanced: Smallest number in a list
+
+Write a program where you define a list variable but only fill it with many different numbers.
+
+Create a script that figures out the smallest number within this list.
+
+Your script should work even if you rearange the numbers in your list, add more numbers or remove numbers from it.
+
+Bonus is to make a script that prints both the smallest and largest number in the same script.
+
+## Add and subtract objects
+
+Create two objects of the same type but with different content.
+
+Next try to add and subtract the objects with eachother and see what happens.
+
+Example `x + y` where x and y is a list with items.
+
+Attempt this with all 4 collection types and observe what happens.
+
+The 4 collection types here is list, dict, tuple, set
+
+# Dictionaries / dict
+
+## Add a new value or update existing value
+
+Write a Python script that adds a key to a dictionary and one that updates an existing value to a new value.
+
+Print the entire dict between each add and update
+
+Sample Dictionary : {0: 10, 1: 20}
+Expected Result : {0: 10, 1: 20, 2: 30}
+
+## Clone a dict object into a new one
+
+First create a dict and populate it with a few key:value paris of different types
+    
+Next clone this object and save it to a new variable
+
+Add one new key:value to both objects and print them out.
+
+## Check if key exists
+
+Write a script where you first populate a dict with a few key:value pairs
+    
+Next try to figure out two different ways how to check if a key exists inside your dict variable.
+
+Bonus is to use this comparison inside a if/else statement to print two different things if it do exists or if it don't
+
+## Clear out a dict
+
+Write a script where you first create and populate a dict with a few items
+
+Next clear out all key:value pairs from your variable and print it at the end. It should print out as empty.
+    
+Also print out the call to `len(your_dict_variable)` and that should print out 0
+
+## Is empty or not
+
+Write a script where you first populate a dict with a few key:value pairs
+    
+Next try to figure out two or more ways you can check if the dict is empty or not.
+
+Hint is: if & len
+
+Bonus is if you can figure it out by using `.keys()` or `.values()`
+
+In all case:s print out Yes or No depending on the result
+
+## Join two dict:t with eachother
+
+Create two dict variables and populate them with one key:value pair each.
+    
+Next find out a way to merge these two variables into one new variable but where both key:value pairs exists
+    
+Print out the new variable you have created.
+
+Bonus here is if you can solve this with a for loop
+
+## Add key:value pair from user input
+
+Write a script and define an empty dict
+
+Next ask the user for two inputs, one for the name of the key, and one for the value for that key
+
+Add the user input to your empty dict
+
+Print the dict and what the user have input:ed should be printed out
+    
+Bonus here is if you create a for or while loop and enable the user to input multiple key:value pairs in one script run
+
+# Tuples and set:s
+
+Since most of tuple and set operations works almost the exact same way as a list or a dict
+
+Your exercise is to run through the above coding exercises but instead of using a list or dict
+
+Try to figure out where you can use a Tuple and where you can use a Set and perform the same operation to get either the same or very similar results
+
+In some case:s you have to think outside the box a little bit due to how the data structures work and use some different methods when using the different types
+
+
+```python
+
+```
