@@ -1,6 +1,6 @@
 
 
-def solution(s=str):
+def solution(s):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     # Create the translation table
     trans = str.maketrans(alphabet, alphabet[::-1] , " ")
