@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # Function for creating arrays.
 # Pass in the index of an array and it will calculate all the values for the next index.
 def create_array(x):
@@ -21,7 +22,7 @@ def solution(x, y):
     np.set_printoptions(suppress=True)
     # square root of 100_000 rounded up
     side = 320
-    arr = np.zeros((side, side))   
+    arr = np.zeros((side, side))
 
     # array 0
     number = 0
@@ -34,6 +35,4 @@ def solution(x, y):
     for i in np.arange(side - 1):
         create_array(i)
 
-
     return str(int(arr[y-1, x-1]))
-
