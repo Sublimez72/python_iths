@@ -36,8 +36,8 @@ def solution(x, y):
             arr[0, i - 1] = number
 
         # all other arrays
-        for i in np.arange(side - 1):
-            create_array(i)
+        for z in np.arange(side - 1):
+            create_array(z)
 
         return str(int(arr[y-1, x-1]))
 
