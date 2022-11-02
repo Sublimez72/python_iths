@@ -40,6 +40,6 @@ def solution(x, y):
             create_array(i)
 
         return str(int(arr[y-1, x-1]))
-        
+
     except Exception as e:
         print(e)
