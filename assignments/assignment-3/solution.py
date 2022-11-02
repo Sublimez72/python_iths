@@ -81,7 +81,7 @@ def solution(filename):
             if len(key) == 1:
                 print(f"{key}: {result[key]}")
 
-        
+
         return result
     
     
