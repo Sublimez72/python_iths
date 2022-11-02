@@ -2,20 +2,18 @@
 
 def solution(x, y):
 
-    arr = []
-    new_arr = []
-    # square root of 100_000 rounded up
-    side = 320
-    # array on x axis with y axis 1
+    x_axis = 0
+    y_axis = 0
+    # calculate value on x axis with y axis 1
     number = 0
-    for i in range(1, side + 1):
+    for i in range(1, x + 1):
         number = number + i
-        arr.append(number)
-    # only calculate y axis array for the speciefied x value.
+        x_axis = number
+
+    # calculate y axis value from variable x_axis
     num = 0
-    for i in range(x, side):
-        new_arr.append(arr[x-1] + num)
+    for i in range(x, y + x):
+        y_axis = x_axis + num
         num = num + i
 
-    result = str(new_arr[y-1])
-    return result
+    return str(y_axis)
