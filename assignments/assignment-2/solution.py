@@ -6,7 +6,7 @@ def solution(x):
     
     # Generic exception since we don't want to print anything to the terminal
     except Exception as e:
-        pass
+        print(e)
 
     return x
 
