@@ -89,5 +89,3 @@ def solution(filename):
         print(e)
 
 
-solution("assignments/assignment-3/minion-submissions/minion-3.txt")
-
