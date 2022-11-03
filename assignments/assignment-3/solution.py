@@ -1,5 +1,39 @@
 
 
+def print_dictionary(result):
+    # Sorting the list
+    result = dict(sorted(result.items()))
+
+    # Printing results to terminal
+    print(f"Number of lines: \t{result['How many lines']}")
+    print("-" * 50)
+
+    print(f"Number of words: \t{result['How many words']}")
+    print("-" * 50)
+
+    print(f"Number of spaces: \t{result['How many spaces']}")
+    print("-" * 50)
+
+    print("Longest word/words.")
+    print("-" * 50)
+    for word in result["Longest word"]:
+        print(word)
+    print()
+
+    print("Shortest word/words")
+    print("-" * 50)
+    for word in result["Shortest word"]:
+        print(word)
+    print()
+
+    print("Occurences per letter")
+    print("-" * 50)
+    for key in result:
+        if len(key) == 1:
+            print(f"{key}: {result[key]}")
+    return result
+
+
 def solution(filename):
     try:
         result = {
@@ -50,37 +84,9 @@ def solution(filename):
                         result["Shortest word"].append(word)
 
                     result["How many words"] += 1
-        # Sorting the list
-        result = dict(sorted(result.items()))
 
-        # Printing results to terminal
-        print(f"Number of lines: \t{result['How many lines']}")
-        print("-" * 50)
-
-        print(f"Number of words: \t{result['How many words']}")
-        print("-" * 50)
-
-        print(f"Number of spaces: \t{result['How many spaces']}")
-        print("-" * 50)
-
-        print("Longest word/words.")
-        print("-" * 50)
-        for word in result["Longest word"]:
-            print(word)
-        print()
-
-        print("Shortest word/words")
-        print("-" * 50)
-        for word in result["Shortest word"]:
-            print(word)
-        print()
-
-        print("Occurences per letter")
-        print("-" * 50)
-        for key in result:
-            if len(key) == 1:
-                print(f"{key}: {result[key]}")
-
+        # Function sorts and prints the dictionary.
+        result = print_dictionary(result)
         return result
 
     except Exception as e:
