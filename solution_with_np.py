@@ -25,7 +25,7 @@ def solution(x, y):
         # and this line solved it.
         np.set_printoptions(suppress=True)
         # square root of 100_000 rounded up
-        side = 320
+        side = 10
         arr = np.zeros((side, side))
 
         # array 0
@@ -38,8 +38,9 @@ def solution(x, y):
         # all other arrays
         for z in np.arange(side - 1):
             create_array(z)
-
+        print(arr)
         return str(int(arr[y-1, x-1]))
 
     except Exception as e:
         print(e)
+solution(2,2)
