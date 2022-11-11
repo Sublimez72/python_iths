@@ -4,7 +4,7 @@ def solution(x, y):
     try:
         x_axis = 0
         y_axis = 0
-        # calculate value on x axis with y axis 1
+        # calculate value on x axis with y axis = 1
         number = 0
         for i in range(1, x + 1):
             number = number + i
