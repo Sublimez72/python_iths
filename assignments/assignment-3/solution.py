@@ -42,7 +42,7 @@ def solution(filename):
             "How many words": 0,
             "How many lines": 1,
             "How many spaces": 0
-            }
+        }
 
         # Counting number of occurences of each letter
         with open(filename) as f:
@@ -64,10 +64,13 @@ def solution(filename):
 
             # Counting the number of occurences of each word
             # and finding the longest and shortest one
+            invalid_chars = [".", ",", "!", "?"]
+            trans = str.maketrans(dict.fromkeys(invalid_chars, None))
+
             for lines in f:
                 for word in lines.split():
-                    if word.endswith("."):
-                        word = word[:-1]
+
+                    word = word.translate(trans)
 
                     if len(word) > len(result["Longest word"][0]):
                         result["Longest word"] = []
@@ -88,6 +91,5 @@ def solution(filename):
         # Function sorts and prints the dictionary.
         result = print_dictionary(result)
         return result
-
     except Exception as e:
         print(e)
