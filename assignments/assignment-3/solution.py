@@ -64,7 +64,8 @@ def solution(filename):
 
             # Counting the number of occurences of each word
             # and finding the longest and shortest one
-            invalid_chars = [".", ",", "!", "?"]
+            invalid_chars = [".", ",", "!", "?",
+                             "-", "_", "\"", "\'", "(", ")"]
             trans = str.maketrans(dict.fromkeys(invalid_chars, None))
 
             for lines in f:
